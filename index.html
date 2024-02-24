@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <div><input id="display" readonly></div>
+      <div id="calci">
+       <button class="key" onclick="appendtodisplay('7')">7</button>
+       <button class="key" onclick="appendtodisplay('8')">8</button>
+       <button class="key" onclick="appendtodisplay('9')">9</button>
+       <button  class="key" id="delete" onclick="deletefn()">DEL</button>
+       <button class="key" onclick="appendtodisplay('4')">4</dbutton>
+       <button class="key" onclick="appendtodisplay('5')">5</dbutton>
+       <button class="key" onclick="appendtodisplay('6')">6</button>
+       <button class="key" onclick="appendtodisplay('+')">+</button>
+       <button class="key" onclick="appendtodisplay('1')">1</button>
+       <button class="key" onclick="appendtodisplay('2')">2</button>
+       <button class="key" onclick="appendtodisplay('3')">3</button>
+       <button class="key" onclick="appendtodisplay('-')">-</button>
+       <button class="key" onclick="appendtodisplay('.')">.</button>
+       <button class="key" onclick="appendtodisplay('0')">0</button>
+       <button class="key" onclick="appendtodisplay('/')">/</button>
+       <button class="key" onclick="appendtodisplay('*')">*</button> 
+       <button class="key" id="reset" onclick="resetfn()">RESET</button>
+       <button class="key"id="equal" onclick="calculate()">=</button>
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>
