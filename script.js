@@ -4,7 +4,8 @@ function appendtodisplay(input){
   display.value += input;
 }
 function calculate(){
-    display.value = eval(display.value);
+  let expression = display.value.replace(/x/g, '*'); 
+    display.value = eval(expression);
 }
 function deletefn(){
   display.value = display.value.substring(0,display.value.length-1);
